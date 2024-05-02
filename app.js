@@ -4,7 +4,7 @@ const server = http.createServer((request, response) => {
   response.statusCode = 200;
   response.setHeader('Content-Type', 'application/json');
 
-  const greeting = {'Hello, World!'};
+  const greeting = {content: 'Hello, World!'};
 
   response.write(JSON.stringify(greeting));
   response.end();
